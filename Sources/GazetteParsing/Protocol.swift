@@ -8,11 +8,11 @@
 import Foundation
 import GazetteCore
 
-enum FeedParsingError: Error {
+public enum FeedParsingError: Error {
 	case unsupportedFeedType
 }
 
-protocol FeedParsing {
+public protocol FeedParsing {
 	typealias Err = FeedParsingError
 	
 	func parse(url: URL) async throws -> TransientFeed

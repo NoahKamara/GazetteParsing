@@ -61,7 +61,7 @@ struct FeedKitParser: FeedParsing {
 		return TransientFeed(
 			url: url,
 			link: link,
-			title: feed.title ?? "Untitled Feed",
+			title: feed.title,
 			image: image,
 			articles: articles ?? []
 		)
